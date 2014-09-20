@@ -1,0 +1,38 @@
+Getting and Cleaning Data: Course Project
+Readme File
+
+Introduction
+
+This repository contains the following work for my project for the Coursera course "Getting and Cleaning data", part of the Data Science specialization:
+
+run_analysis.R This file contains the R code that produces the file tidy.txt, according to the course directions for this assigment.
+
+Codebook.Rmd This file is an R Markdown file outlining the variable transformations
+
+Readme.txt  This file.
+
+About the raw data
+
+A full description of the data can be found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The data and associated files can be downloaded here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The features (561 of them) are unlabeled and can be found in the x_test.txt. The activity labels are in the y_test.txt file. The test subjects are in the subject_test.txt file; The same holds for the training set.
+
+About the script and the tidy dataset
+
+The script is called run_analysis.R. This script does the following to create the tidy.txt data file:
+
+The UCI HAR Dataset must be extracted; and,
+The UCI HAR Dataset must be availble in a directory called "UCI HAR Dataset"
+
+From this data the script does the following:
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+About the Code Book
+
+The CodeBook.Rmd file explains the transformations performed and the resulting data and variables.
